@@ -179,6 +179,31 @@ nav ul li {
   text-align: center;
   margin-top: 2.5rem;
 }
+.skills img {
+  width: 250px; /* Set a specific width for all images */
+  height: 250px; /* Set a specific height for all images */
+  margin: 5px; /* Add margin to create spacing between images (adjust as needed) */
+  border: 2px solid var(--primary-color); /* Add a border around the images */
+  border-radius: 50%; /* Make the images circular */
+}
+.btn {
+  background-color:#d8504d;
+  margin-right: 40px;
+  width: 120px;
+  height: 50px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 5px 6px 21px 6px rgba(0, 0, 0, 0.2);
+  user-select: none;
+  transition: 0.3s;
+  transition-property: box-shadow;}
+
+
+
 
 .skill-header {
   margin-bottom: 1rem;
@@ -218,6 +243,10 @@ nav ul li {
   align-items: center;
   justify-content: center;
 
+}
+.icon img {
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Adjust the height as needed */
 }
 
 .projects-title {
