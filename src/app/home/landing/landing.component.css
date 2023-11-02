@@ -217,6 +217,7 @@ nav ul li {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .projects-title {
@@ -232,6 +233,8 @@ nav ul li {
 
 .project-container p {
   padding: 0.4rem;
+  background: rgba(0,0,0,0.09);
+
 }
 
 .project-title {
@@ -267,7 +270,7 @@ nav ul li {
   box-shadow: 0 3px 10px var(--secondary-shadow);
 }
 .contact-form form {
-  background: linear-gradient(135deg, #4756df, #ff7235); /* Adjust the colors and direction as needed */
+  background: linear-gradient(45deg, #ffcc29, #f81701);
   border: 2px solid var(--primary-color);
   padding: 20px;
 }
