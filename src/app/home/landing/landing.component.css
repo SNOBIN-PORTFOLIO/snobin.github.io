@@ -18,10 +18,12 @@
 }
 
 /* CSS Resets */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
 }
 
 ul {
@@ -63,9 +65,10 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.5rem 3.5rem;
-  background-color: var(--bg-color);
+  background-color: rgba(252, 252, 252, 0.9); /* Add a background color with some opacity */
   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
 }
+
 
 nav h1 {
   color: var(--primary-color);
@@ -100,6 +103,15 @@ nav ul li {
 }
 
 .hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem;
+  max-width: 68.75rem;
+  margin: auto;
+}
+.hero {
+  margin-top: calc(3.5rem + 10px); /* Adjust 10px to match your navigation bar's height */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -177,9 +189,10 @@ nav ul li {
 }
 
 .icon {
-  width: 11.875rem;
-  height: 11.25rem;
+  font-size: 2rem; /* Adjust the size as needed */
+  color: #4756df; /* Change the color as needed */
 }
+
 
 .icon-card {
   background-color: #fff;
@@ -253,6 +266,16 @@ nav ul li {
   border-radius: 5px;
   box-shadow: 0 3px 10px var(--secondary-shadow);
 }
+.contact-form form {
+  background: linear-gradient(135deg, #4756df, #ff7235); /* Adjust the colors and direction as needed */
+  border: 2px solid var(--primary-color);
+  padding: 20px;
+}
+
+.contact-form form:hover {
+  border: 2px solid var(--secondary-color);
+}
+
 
 .contact-form-container label {
   line-height: 2.7em;
@@ -298,13 +321,23 @@ nav ul li {
   border: 2px solid var(--primary-color);
   cursor: pointer;
 }
-
 .socials {
   display: flex;
   flex-direction: column;
   position: fixed;
-  right: 1%;
-  bottom: 50%;
+  right: 20px; /* Adjust the right positioning as needed */
+  bottom: 20%; /* Adjust the bottom positioning as needed */
+}
+
+.socials a {
+  text-decoration: none;
+  font-size: 24px; /* Adjust the font size to make the icons bigger */
+  margin: 10px; /* Adjust the margin between icons as needed */
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #ff7235; /* Change color on hover */
 }
 
 .socicon {
@@ -321,15 +354,18 @@ footer {
 
 .scroll-up {
   position: fixed;
+  z-index: 999;
   right: 0.5%;
   bottom: 3%;
   cursor: pointer;
 }
 
 .up-arrow {
-  width: 3rem;
-  height: 3rem;
+  font-size: 2rem; /* Adjust the font size as needed */
+  color: #4756df; /* Change the color as needed */
 }
+
+
 
 @media screen and (max-width: 720px) {
   nav {
