@@ -158,20 +158,40 @@ nav ul li {
   
   /* ... (rest of your CSS) */
   
-.more-about {
+.moreabout {
+  margin: 50px;
   background-color: var(--bg-color);
   padding: 1rem 6rem;
 }
 
-.more-about h2 {
+.moreabout h2 {
   margin-bottom: var(--bottom-margin);
   text-align: center;
 }
 
-.more-about p {
+.moreabout p {
   line-height: var(--line-height);
   padding: 0.4rem;
 }
+.project-card {
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s;
+}
+
+.project-card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  background-color: #b8b8b8;
+}
+.icon-card {
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.icon-card:hover {
+  transform: scale(1.2);
+  background-color: #b8b8b8;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
 
 .skills {
   max-width: 68.75rem;
@@ -199,9 +219,12 @@ nav ul li {
   justify-content: center;
   box-shadow: 5px 6px 21px 6px rgba(0, 0, 0, 0.2);
   user-select: none;
-  transition: 0.3s;
+  transition: transform 0.2s, box-shadow 0.2s;
   transition-property: box-shadow;}
-
+.btn :hover{
+  transform: scale(1.2);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+}
 
 
 
